@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../resources/logo.svg';
 import '../styles/App.css';
+import {Button} from 'react-bootstrap';
+
+
 import {Link} from 'react-router-dom';
 
 class App extends Component {
@@ -9,10 +12,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <Link to='/peopleList'>People List</Link>
+          <h1 className="App-title">React API practice</h1>
         </header>
+        <Button bsStyle="info"><Link to='/peopleList' className = "link" >People List</Link></Button>
       </div>
+      
+
     );
   }
 }

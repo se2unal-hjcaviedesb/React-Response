@@ -26,3 +26,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.link {
+  color: #FFF;
+  padding-top: 25px
+}
+.link:hover {
+   color: #00F
+}
+
+.list {
+    padding-top: 10px
+}
+

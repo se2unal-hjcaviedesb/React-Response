@@ -1,6 +1,10 @@
 import React from 'react';
-
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import {ListGroupItem, ListGroup} from 'react-bootstrap';
+import '../styles/App.css';
+
 
 export default class PeopleList extends React.Component {
   state = {
@@ -17,9 +21,13 @@ export default class PeopleList extends React.Component {
 
   render() {
     return (
-      <ul>
-        { this.state.persons.map(person => <li>{person.name}</li>)}
-      </ul>
+    <div>
+    
+    <ListGroup className = "list">
+          { this.state.persons.map(person => <ListGroupItem bsStyle="info">{person.name}</ListGroupItem>)}
+    </ListGroup>
+      
+      </div>
     )
   }
 }
